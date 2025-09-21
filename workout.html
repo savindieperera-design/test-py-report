@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Workout Generator</title>
+  <link rel="stylesheet" href="workout.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/pngegg.png" alt="GreenBite Logo" class="logo-img">
+        <span class="logo-text">GreenBite</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html" class="active">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="calculator-intro">
+    <h1>Workout Generator</h1>
+    <p>Get a personalized workout plan based on your body part and equipment preferences.</p>
+  </section>
+
+  <!-- Workout Layout (Matches Calorie Calculator Theme) -->
+  <section class="calculator-section">
+    <!-- Left: Workout Form -->
+    <div class="calculator-form">
+      <h2>Select Your Preferences</h2>
+      <form id="workoutForm">
+        <label for="bodyPart">Body Part:</label>
+        <select id="bodyPart" required>
+          <option value="">Select</option>
+          <option value="arms">Arms</option>
+          <option value="legs">Legs</option>
+          <option value="core">Core</option>
+          <option value="fullbody">Full Body</option>
+        </select>
+
+        <label for="equipment">Equipment:</label>
+        <select id="equipment" required>
+          <option value="">Select</option>
+          <option value="none">No Equipment</option>
+          <option value="dumbbells">Dumbbells</option>
+          <option value="bands">Resistance Bands</option>
+        </select>
+
+        <button type="submit">Generate Workout</button>
+      </form>
+    </div>
+
+    <!-- Right: Info Box -->
+    <div class="calculator-info">
+      <img src="images/360_F_422129557_tBylYldzJ5KjVTEdRLMkQIaYizThV1PE.jpg" alt="Workout Illustration">
+      <h3>Ready to Train?</h3>
+      <p>Fill out the form and get your customized workout instantly.</p>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="results" id="workoutResults" style="display:none;">
+    <h2>Your Workout Plan</h2>
+    <ul id="workoutList"></ul>
+    <!-- Changed from <h1> (invalid empty heading) -->
+    <div id="workoutTimer"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GreenBite | Follow us on Social Media</p>
+    <p><strong>GreenBite HQ</strong> | 123 Wellness Avenue, Colombo 00700</p>
+    <p>+94 11 234 5678  <a href="mailto:info@greenbite.lk">info@greenbite.lk</a></p>
+    <form id="newsletter-form">
+      <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

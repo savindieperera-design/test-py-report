@@ -1,0 +1,152 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 60px;   /* push content down so it's not hidden behind navbar */
+  padding-bottom: 80px; /* if footer is sticky */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(116, 145, 116);
+  padding: 10px 0px;
+  color: white;
+
+  position: fixed;  /* always visible at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: max-height 0.3s ease-out;
+}
+
+.nav-links li {
+  margin: 0 20px; 
+}
+
+
+.nav-links.show {
+  max-height: 1000px; /* enough space for all items */
+  opacity: 1;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hamburger for mobile/tablet */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Responsive - Tablet and Mobile */
+@media (max-width: 992px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgb(116, 145, 116);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-links.show {
+    max-height: 500px; /* enough space for links */
+  }
+
+  .nav-links li {
+    margin: 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer p, footer a, footer span {
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer form {
+  margin-top: 15px;
+}
+
+footer input[type="email"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #27ae60;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Make page take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let main content grow and push footer down */
+main {
+  flex: 1;
+}
+

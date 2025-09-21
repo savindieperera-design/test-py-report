@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "title": "Spicy Chickpea Buddha Bowl",
+    "image": "images/simply-organic-recipe-roasted-chickpea-buddha-bowls-with-avocado-dressing-finished-horizontal-1.jpg.webp",
+    "category": "breakfast",
+    "ingredients": [
+      "1 cup roasted chickpeas",
+      "1/2 cup quinoa (cooked)",
+      "1/2 avocado, sliced",
+      "1/2 cup roasted sweet potato",
+      "1 tbsp tahini dressing"
+    ],
+    "nutrition": {
+      "calories": "420 kcal",
+      "protein": "14g",
+      "carbs": "58g",
+      "fat": "14g"
+    },
+    "instructions": [
+      "Cook quinoa according to package instructions.",
+      "Roast chickpeas and sweet potatoes with olive oil, paprika, and salt.",
+      "Assemble quinoa, chickpeas, sweet potatoes, and avocado in a bowl.",
+      "Drizzle with tahini dressing and serve warm."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mango Coconut Chia Pudding",
+    "image": "images/af4516a-6bb2-482-a427-6ba77151c06_mango_chia_pudding.jpg",
+    "category": "snack",
+    "ingredients": [
+      "1/4 cup chia seeds",
+      "1 cup coconut milk",
+      "1 tbsp honey",
+      "1/2 cup fresh mango puree",
+      "1 tbsp shredded coconut"
+    ],
+    "nutrition": {
+      "calories": "310 kcal",
+      "protein": "6g",
+      "carbs": "40g",
+      "fat": "14g"
+    },
+    "instructions": [
+      "Mix chia seeds with coconut milk and honey.",
+      "Refrigerate overnight to thicken.",
+      "Layer pudding with mango puree.",
+      "Top with shredded coconut and serve chilled."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Creamy Garlic Mushroom Pasta",
+    "image": "images/Mushroom-and-kale-spaghetti-6c922df.jpg",
+    "category": "dinner",
+    "ingredients": [
+      "200g spaghetti",
+      "1 cup mushrooms (sliced)",
+      "2 cloves garlic (minced)",
+      "1/2 cup cream",
+      "1 tbsp parmesan cheese"
+    ],
+    "nutrition": {
+      "calories": "490 kcal",
+      "protein": "16g",
+      "carbs": "70g",
+      "fat": "16g"
+    },
+    "instructions": [
+      "Boil spaghetti until al dente.",
+      "Sauté mushrooms and garlic in olive oil.",
+      "Add cream and simmer until slightly thick.",
+      "Toss pasta in sauce and sprinkle with parmesan before serving."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Mediterranean Lentil Soup",
+    "image": "images/Mediterranean-Lentil-Soup-with-Spinach-4.jpg",
+    "category": "dinner",
+    "ingredients": [
+      "1 cup red lentils",
+      "1 onion (chopped)",
+      "2 carrots (diced)",
+      "1 tomato (chopped)",
+      "1 tsp cumin"
+    ],
+    "nutrition": {
+      "calories": "320 kcal",
+      "protein": "18g",
+      "carbs": "52g",
+      "fat": "4g"
+    },
+    "instructions": [
+      "Sauté onion, carrots, and tomato in olive oil.",
+      "Add lentils, cumin, salt, and 4 cups of water.",
+      "Cook until lentils are soft and thick.",
+      "Serve hot with bread."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Berry Oat Smoothie",
+    "image": "images/triple-berry-oat-tropical-smoothie.jpg",
+    "category": "snack",
+    "ingredients": [
+      "1/2 cup rolled oats",
+      "1 cup mixed berries",
+      "1 banana",
+      "1 cup almond milk",
+      "1 tsp honey"
+    ],
+    "nutrition": {
+      "calories": "280 kcal",
+      "protein": "7g",
+      "carbs": "55g",
+      "fat": "5g"
+    },
+    "instructions": [
+      "Blend oats until fine powder.",
+      "Add berries, banana, almond milk, and honey.",
+      "Blend until smooth and creamy.",
+      "Serve chilled in a tall glass."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Stuffed Bell Peppers",
+    "image": "images/stuffed-bell-peppers-recipe-1024x759.webp",
+    "category": "lunch",
+    "ingredients": [
+      "4 large bell peppers",
+      "1 cup cooked quinoa",
+      "1 cup black beans",
+      "1/2 cup corn",
+      "1/2 cup diced tomatoes",
+      "1 tsp cumin",
+      "1/2 cup shredded cheese (optional)"
+    ],
+    "nutrition": {
+      "calories": "350 kcal",
+      "protein": "14g",
+      "carbs": "60g",
+      "fat": "8g"
+    },
+    "instructions": [
+      "Preheat oven to 180°C (350°F).",
+      "Cut tops off bell peppers and remove seeds.",
+      "Mix quinoa, beans, corn, tomatoes, and cumin.",
+      "Stuff peppers with the mixture and top with cheese if desired.",
+      "Bake for 25–30 minutes until peppers are tender."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Zucchini Noodle Stir-Fry",
+    "image": "images/asian-zucchini-noodles-4.jpg",
+    "category": "breakfast",
+    "ingredients": [
+      "2 medium zucchinis (spiralized)",
+      "1 cup sliced mushrooms",
+      "1/2 cup bell peppers",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 tsp garlic",
+      "1 tsp ginger"
+    ],
+    "nutrition": {
+      "calories": "220 kcal",
+      "protein": "6g",
+      "carbs": "28g",
+      "fat": "9g"
+    },
+    "instructions": [
+      "Heat sesame oil in a wok.",
+      "Add garlic, ginger, mushrooms, and bell peppers; stir-fry for 3–4 minutes.",
+      "Add zucchini noodles and soy sauce.",
+      "Cook for 2–3 minutes until noodles are tender but not soggy.",
+      "Serve hot with sesame seeds on top."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Chickpea Curry",
+    "image": "images/Simply-Recipes-Chickpea-Curry-LEAD-3-c9775da991bd44f7862f9fa5e8ead844.jpg",
+    "category": "lunch",
+    "ingredients": [
+      "1 can chickpeas (rinsed)",
+      "1 onion (chopped)",
+      "2 tomatoes (chopped)",
+      "1 cup coconut milk",
+      "2 tsp curry powder",
+      "1 tsp cumin",
+      "1 tbsp olive oil"
+    ],
+    "nutrition": {
+      "calories": "390 kcal",
+      "protein": "12g",
+      "carbs": "45g",
+      "fat": "18g"
+    },
+    "instructions": [
+      "Heat olive oil in a pan, sauté onion until golden.",
+      "Add tomatoes, curry powder, and cumin; cook for 5 minutes.",
+      "Stir in chickpeas and coconut milk.",
+      "Simmer for 15 minutes until thickened.",
+      "Serve hot with rice or naan bread."
+    ]
+  }
+
+]

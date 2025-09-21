@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(116, 145, 116);
+  padding: 10px 20px;
+  color: white;
+
+  position: fixed;   /* always visible */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;     /* stays above everything */
+}
+
+/* Intro */
+.calculator-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ecf0f1;
+}
+.calculator-intro h1 {
+  font-size: 2.5em;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+.calculator-intro p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Layout */
+.calculator-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 20px;
+}
+.calculator-form, .calculator-info {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 768px) {
+  .calculator-section {
+    flex-direction: column;
+  }
+}
+
+/* Form */
+.calculator-form h2 {
+  color: #27ae60;
+}
+.calculator-form label {
+  display: block;
+  margin-top: 10px;
+}
+.calculator-form input, .calculator-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.calculator-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Info Box */
+.calculator-info {
+  text-align: center;
+}
+.calculator-info img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+.calculator-info h3 {
+  color: #27ae60;
+}
+
+/* Results */
+.results {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: #ecf0f1;
+  border-radius: 10px;
+}
+.results h2 {
+  color: #27ae60;
+}
+.macros p {
+  margin: 5px 0;
+  font-weight: bold;
+} 

@@ -1,0 +1,120 @@
+/* Intro Section */
+.calculator-intro {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ecf0f1;
+}
+.calculator-intro h1 {
+  font-size: 2.8em;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+.calculator-intro p {
+  font-size: 1.3em;
+  color: #555;
+}
+
+/* Layout (bigger, like Calorie Calculator) */
+.calculator-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 20px;
+  gap: 30px;
+}
+.calculator-form, .calculator-info {
+  flex: 1;
+  padding: 30px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Form */
+.calculator-form h2 {
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+.calculator-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.calculator-form input, .calculator-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.calculator-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Info Box */
+.calculator-info {
+  text-align: center;
+}
+.calculator-info img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.calculator-info h3 {
+  color: #27ae60;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+/* Results */
+.results {
+  text-align: center;
+  margin: 50px auto;
+  padding: 25px;
+  max-width: 650px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  z-index: 10;
+}
+.results h2 {
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+#workoutTimer {
+  font-size: 2.5em;
+  color: #27ae60;
+  margin-top: 20px;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 50px;
+}
+footer p, footer a {
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .calculator-section {
+    flex-direction: column;
+  }
+}

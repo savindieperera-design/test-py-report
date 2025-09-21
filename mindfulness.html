@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Mindfulness</title>
+  <link rel="stylesheet" href="style.css"> <!-- navbar/footer -->
+  <link rel="stylesheet" href="mindfulness.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/pngegg.png" alt="GreenBite Logo" class="logo-img">
+      <span class="logo-text">GreenBite</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="mindfulness.html" class="active">Mindfulness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+</header>
+
+<!-- Intro -->
+<section class="calculator-intro">
+  <h1>Mindfulness Hub</h1>
+  <p>Find inner peace with guided breathing, meditation timers, and calming ambient sounds.</p>
+</section>
+
+<!-- Breathing + Timer -->
+<section class="calculator-section">
+  <!-- Left: Breathing -->
+  <div class="calculator-form">
+    <h2>Guided Breathing</h2>
+    <div id="breathingBox" class="breathing-box">
+      <p id="breathingText">Click Start to Begin</p>
+      <div class="circle breathe-out"></div>
+      <button id="startBreathing">Start</button>
+      <button id="stopBreathing">Stop</button>
+    </div>
+  </div>
+
+  <!-- Right: Timer -->
+  <div class="calculator-info">
+    <h2>Meditation Timer</h2>
+    <p id="timerDisplay">00:00</p>
+    <button id="startTimer">Start</button>
+    <button id="stopTimer">Stop</button>
+    <button id="resetTimer">Reset</button>
+  </div>
+</section>
+
+<!-- Ambient Sounds -->
+<section class="results">
+  <h2>Ambient Sounds</h2>
+  <button class="soundBtn" data-sound="rain">🌧️ Rain</button>
+  <button class="soundBtn" data-sound="ocean">🌊 Ocean</button>
+  <button class="soundBtn" data-sound="forest">🌲 Forest</button>
+</section>
+
+ <footer>
+    <p>&copy; 2025 GreenBite | Follow us on Social Media</p>
+    <p><strong>GreenBite HQ</strong> | 123 Wellness Avenue, Colombo 00700</p>
+    <p>+94 11 234 5678 <a href="mailto:info@greenbite.lk">info@greenbite.lk</a></p>
+    <form id="newsletter-form">
+      <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+
+<script src="mindfulness.js"></script>
+</body>
+</html>

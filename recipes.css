@@ -1,0 +1,212 @@
+/* Intro Section (same style across pages) */
+.calculator-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ecf0f1;
+}
+.calculator-intro h1 {
+  font-size: 2.5em;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+.calculator-intro p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Search & Filter Section */
+.search-section {
+  text-align: center;
+  padding: 20px;
+  background: #ecf0f1;
+}
+.search-section input, 
+.search-section select {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-section button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #27ae60;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Recipe Grid (main container for cards) */
+#recipes-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row by default */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center; /* center items horizontally */
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-align: center;
+  cursor: pointer; /* clickable */
+  width: 100%;       /* let grid handle sizing */
+  max-width: 250px;  /* cap width */
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  margin: 10px;
+  color: #27ae60;
+  font-size: 1.2em;
+}
+
+.recipe-card p {
+  margin: 0 10px 10px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Popup */
+/* #recipe-detail {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#recipe-detail.hidden {
+  display: none;
+}
+.detail-content {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  position: relative;
+}
+#close-btn {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: red; color: #fff; border: none;
+  padding: 5px 10px; cursor: pointer;
+}
+.detail-layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.left {
+  width: 40%;
+}
+.right {
+  width: 60%;
+} */
+
+/* Popup */
+#recipe-detail {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* so content doesn't touch edges */
+  z-index: 2000;
+}
+
+#recipe-detail.hidden {
+  display: none;
+}
+
+.detail-content {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto; /* scroll if content too tall */
+  max-height: 90vh; /* fit in viewport */
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+  z-index: 2100;
+}
+
+/* Flex layout for popup content */
+.detail-layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+/* ===== MOBILE POPUP FIX ===== */
+@media (max-width: 600px) {
+  .detail-layout {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%; /* full width stacked */
+  }
+
+  #close-btn {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+
+/* Tablet view (max 900px) -> 2 per row */
+@media (max-width: 900px) {
+  #recipes-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view (max 600px) -> 1 per row, centered */
+@media (max-width: 600px) {
+  #recipes-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .recipe-card {
+    max-width: 90%; /* card fills most of the screen */
+  }
+}

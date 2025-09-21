@@ -1,0 +1,118 @@
+.calculator-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ecf0f1;
+}
+.calculator-intro h1 {
+  font-size: 2.5em;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+.calculator-intro p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Contact Section Layout */
+.calculator-section {
+  display: flex;
+  flex-wrap: wrap;        /* makes it responsive */
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+/* Left and Right Boxes */
+.calculator-form, 
+.calculator-info {
+  flex: 1;                /* each takes equal width */
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Titles inside boxes */
+.calculator-form h2,
+.calculator-info h2 {
+  margin-bottom: 15px;
+  color: #27ae60;
+}
+
+/* Contact form fields */
+#contactForm textarea,
+#contactForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactForm button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background: #219150;
+}
+
+/* Responsive layout: stack vertically on small screens */
+@media (max-width: 768px) {
+  .calculator-section {
+    flex-direction: column;
+  }
+}
+/* FAQ Section */
+.faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.faq-section h2 {
+  font-size: 2em;
+  color: #27ae60;
+  margin-bottom: 30px;
+}
+
+/* FAQ Items */
+.faq-item {
+  margin-bottom: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: #27ae60;
+  color: white;
+  padding: 15px;
+  font-size: 1.1em;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: #1e8748;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: #f9f9f9;
+  color: #333;
+  font-size: 1em;
+}

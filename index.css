@@ -1,0 +1,227 @@
+
+
+/* Hero Section */
+.hero {
+  height: 100vh; /* full viewport height */
+  min-height: 500px; /* fallback for smaller screens */
+  background: url('images/wellness-tourism.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(75, 85, 80, 0.4); /* dark overlay for readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+}
+
+.greenbite-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.2em;
+  font-weight: 700;
+  color: rgb(227, 234, 227);
+  margin-bottom: 10px;
+}
+
+#hero-text {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-top: 10px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .greenbite-title {
+    font-size: 2.5em;
+  }
+  #hero-text {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .greenbite-title {
+    font-size: 2em;
+  }
+  #hero-text {
+    font-size: 1.2em;
+  }
+}
+
+
+.health-tip {
+  padding: 60px 20px;
+  background: #ecf0f1;
+}
+
+.health-tip-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Image layout inspired by gym membership style */
+.image-layout {
+  position: relative;
+  width: 320px;
+  height: 400px;
+}
+
+.image-layout img {
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Top image - slightly rotated */
+.img-top {
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 140px;
+  transform: rotate(-5deg);
+  z-index: 3;
+}
+
+/* Middle image - overlaps top */
+.img-middle {
+  top: 80px;
+  left: 60px;
+  width: 220px;
+  height: 180px;
+  transform: rotate(3deg);
+  z-index: 2;
+}
+
+/* Bottom image - overlaps middle */
+.img-bottom {
+  top: 220px;
+  left: -20px;
+  width: 180px;
+  height: 140px;
+  transform: rotate(-2deg);
+  z-index: 1;
+}
+
+.image-layout img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+  z-index: 5;
+}
+
+/* Tip Text */
+.health-tip-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  margin: 80px 0;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+}
+
+.health-tip-text h2 {
+  font-size: 2.2em;
+  color: #27ae60;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.health-tip-text p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+
+/* ===== QUICK LINKS CARDS ===== */
+.quick-links {
+  padding: 60px 20px;
+  text-align: center;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #f1f1ec;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card h3 {
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #27ae60;
+}
+
+/* ===== ABOUT US ===== */
+.about-us {
+  padding: 60px 20px;
+  background: #f7f9f9;
+  text-align: center;
+}
+.about-us h2 {
+  color: #27ae60;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.about-us p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+/* Hide stacked images on mobile */
+@media (max-width: 768px) {
+  .image-layout {
+    display: none;
+  }
+}
+
+/* Tablet view: 2 cards per row */
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view: 1 card per row */
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+

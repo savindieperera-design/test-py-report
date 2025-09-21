@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/pngegg.png" alt="GreenBite Logo" class="logo-img">
+        <span class="logo-text">GreenBite</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="calculator-intro">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out for questions, feedback, or collaboration.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="calculator-section">
+    <!-- Left: Contact Form -->
+    <div class="calculator-form">
+      <h2>Send us a Message</h2>
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="calculator-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Email:</strong> support@greenbite.com</p>
+      <p><strong>Phone:</strong> +94 77 123 4567</p>
+      <p><strong>Address:</strong> 123 Wellness Street, Colombo, Sri Lanka</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63328.49742857629!2d79.8317!3d6.9271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d9f6e6d7d%3A0x3f4f0ab93c2e7d5f!2sColombo!5e0!3m2!1sen!2slk!4v1705252000000"
+        style="border:0; width:100%; height:200px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+      <button class="faq-question">How can I contact GreenBite?</button>
+      <div class="faq-answer">
+        <p>You can reach us via email at <a href="mailto:info@greenbite.lk">info@greenbite.lk</a> or call +94 11 234 5678.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">Do you offer personalized meal plans?</button>
+      <div class="faq-answer">
+        <p>Yes! You can use our calculator or contact us to get a customized plan based on your needs.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">Where is GreenBite HQ located?</button>
+      <div class="faq-answer">
+        <p>We are at 123 Wellness Avenue, Colombo 00700, Sri Lanka.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GreenBite | Follow us on Social Media</p>
+    <p><strong>GreenBite HQ</strong> | 123 Wellness Avenue, Colombo 00700</p>
+    <p>+94 11 234 5678 <a href="mailto:info@greenbite.lk">info@greenbite.lk</a></p>
+    <form id="newsletter-form">
+      <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

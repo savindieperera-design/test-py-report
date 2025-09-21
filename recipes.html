@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Recipes</title>
+  <link rel="stylesheet" href="recipes.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Visually hidden class for accessibility */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/pngegg.png" alt="GreenBite Logo" class="logo-img">
+        <span class="logo-text">GreenBite</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="calculator-intro">
+    <h1>Healthy Recipes</h1>
+    <p>Discover delicious and nutritious meals to support your healthy lifestyle.</p>
+  </section>
+
+  <!-- Search & Filter Section -->
+  <section class="search-section">
+    <h2 class="visually-hidden">Search Recipes</h2>
+    <input type="text" id="searchInput" placeholder="Search recipes...">
+    <select id="filterSelect">
+      <option value="all">All Categories</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="lunch">Lunch</option>
+      <option value="dinner">Dinner</option>
+      <option value="snack">Snacks</option>
+    </select>
+    <button id="searchBtn">Search</button>
+  </section>
+
+  <p style="text-align:center; color:#555;">Click on a recipe card to see full details!</p>
+
+  <div id="recipes-container"></div>
+
+  <!-- Recipe Detail Popup -->
+  <div id="recipe-detail" class="hidden">
+    <div class="detail-content">
+      <button id="close-btn">X</button>
+      <h2 id="detail-title">Recipe Details</h2>
+      <div class="detail-layout">
+        <div class="left">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul id="detail-ingredients"></ul>
+          </div>
+          <div class="nutrition">
+            <h3>Nutrition Information</h3>
+            <p id="detail-nutrition"></p>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Instructions</h3>
+          <ol id="detail-instructions"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 GreenBite | Follow us on Social Media</p>
+    <p><strong>GreenBite HQ</strong> | 123 Wellness Avenue, Colombo 00700</p>
+    <p>+94 11 234 5678 <a href="mailto:info@greenbite.lk">info@greenbite.lk</a></p>
+    <form id="newsletter-form">
+      <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="recipes.js"></script>
+</body>
+</html>
