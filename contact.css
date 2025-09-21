@@ -5,7 +5,7 @@
 }
 .calculator-intro h1 {
   font-size: 2.5em;
-  color: #27ae60;
+  color: #0a5b2c;
   margin-bottom: 10px;
 }
 .calculator-intro p {
@@ -13,34 +13,34 @@
   color: #555;
 }
 
-/* Contact Section Layout */
+
 .calculator-section {
   display: flex;
-  flex-wrap: wrap;        /* makes it responsive */
+  flex-wrap: wrap;       
   gap: 20px;
   margin: 40px auto;
   max-width: 1000px;
   padding: 0 20px;
 }
 
-/* Left and Right Boxes */
+
 .calculator-form, 
 .calculator-info {
-  flex: 1;                /* each takes equal width */
+  flex: 1;               
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Titles inside boxes */
+
 .calculator-form h2,
 .calculator-info h2 {
   margin-bottom: 15px;
-  color: #27ae60;
+  color: #0a5b2c;
 }
 
-/* Contact form fields */
+
 #contactForm textarea,
 #contactForm input {
   width: 100%;
@@ -51,7 +51,7 @@
 }
 
 #contactForm button {
-  background: #27ae60;
+  background: #0a5b2c;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -60,16 +60,16 @@
 }
 
 #contactForm button:hover {
-  background: #219150;
+  background: #0a5b2c;
 }
 
-/* Responsive layout: stack vertically on small screens */
+
 @media (max-width: 768px) {
   .calculator-section {
     flex-direction: column;
   }
 }
-/* FAQ Section */
+
 .faq-section {
   max-width: 800px;
   margin: 50px auto;
@@ -79,7 +79,7 @@
 
 .faq-section h2 {
   font-size: 2em;
-  color: #27ae60;
+  color: #0a5b2c;
   margin-bottom: 30px;
 }
 
@@ -94,7 +94,7 @@
 
 .faq-question {
   width: 100%;
-  background: #27ae60;
+  background: #0a5b2c;
   color: white;
   padding: 15px;
   font-size: 1.1em;
@@ -106,7 +106,7 @@
 }
 
 .faq-question:hover {
-  background: #1e8748;
+  background: #0a5b2c;
 }
 
 .faq-answer {

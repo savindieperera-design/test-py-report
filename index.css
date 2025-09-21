@@ -1,23 +1,21 @@
 
-
-/* Hero Section */
 .hero {
-  height: 100vh; /* full viewport height */
-  min-height: 500px; /* fallback for smaller screens */
+  height: 100vh; 
+  min-height: 500px; 
   background: url('images/wellness-tourism.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   text-align: center;
-  color: white;
+  color: rgb(224, 214, 214);
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(75, 85, 80, 0.4); /* dark overlay for readability */
+  background: rgba(75, 85, 80, 0.4); 
 }
 
 .hero-content {
@@ -30,18 +28,23 @@
   font-family: 'Poppins', sans-serif;
   font-size: 3.2em;
   font-weight: 700;
-  color: rgb(227, 234, 227);
+  color: #414a41;
   margin-bottom: 10px;
 }
+
+
 
 #hero-text {
   font-size: 1.8em;
   font-weight: 500;
   margin-top: 10px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 5px rgba(120, 115, 115, 0.7);
 }
 
-/* Responsive */
+#hero-text {
+  color: #0d0000; 
+}
+
 @media (max-width: 1024px) {
   .greenbite-title {
     font-size: 2.5em;
@@ -76,7 +79,7 @@
   flex-wrap: wrap;
 }
 
-/* Image layout inspired by gym membership style */
+
 .image-layout {
   position: relative;
   width: 320px;
@@ -90,7 +93,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Top image - slightly rotated */
+
 .img-top {
   top: 0;
   left: 0;
@@ -100,7 +103,7 @@
   z-index: 3;
 }
 
-/* Middle image - overlaps top */
+
 .img-middle {
   top: 80px;
   left: 60px;
@@ -110,7 +113,7 @@
   z-index: 2;
 }
 
-/* Bottom image - overlaps middle */
+
 .img-bottom {
   top: 220px;
   left: -20px;
@@ -126,7 +129,7 @@
   z-index: 5;
 }
 
-/* Tip Text */
+
 .health-tip-text {
   flex: 1;
   min-width: 250px;
@@ -138,7 +141,7 @@
 
 .health-tip-text h2 {
   font-size: 2.2em;
-  color: #27ae60;
+  color: #0a5b2c;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -150,7 +153,6 @@
 }
 
 
-/* ===== QUICK LINKS CARDS ===== */
 .quick-links {
   padding: 60px 20px;
   text-align: center;
@@ -184,17 +186,17 @@
   padding: 15px;
   font-size: 1.2em;
   font-weight: 600;
-  color: #27ae60;
+  color: #0a5b2c;
 }
 
-/* ===== ABOUT US ===== */
+
 .about-us {
   padding: 60px 20px;
   background: #f7f9f9;
   text-align: center;
 }
 .about-us h2 {
-  color: #27ae60;
+  color: #0a5b2c;
   font-size: 2em;
   margin-bottom: 20px;
 }
@@ -204,21 +206,21 @@
   font-size: 1.1em;
   line-height: 1.6;
 }
-/* Hide stacked images on mobile */
+
 @media (max-width: 768px) {
   .image-layout {
     display: none;
   }
 }
 
-/* Tablet view: 2 cards per row */
+
 @media (max-width: 1024px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile view: 1 card per row */
+
 @media (max-width: 600px) {
   .cards-container {
     grid-template-columns: 1fr;

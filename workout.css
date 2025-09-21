@@ -1,4 +1,4 @@
-/* Intro Section */
+
 .calculator-intro {
   text-align: center;
   padding: 60px 20px;
@@ -6,7 +6,7 @@
 }
 .calculator-intro h1 {
   font-size: 2.8em;
-  color: #27ae60;
+  color: #0a5b2c;
   margin-bottom: 10px;
 }
 .calculator-intro p {
@@ -14,7 +14,7 @@
   color: #555;
 }
 
-/* Layout (bigger, like Calorie Calculator) */
+
 .calculator-section {
   display: flex;
   justify-content: space-between;
@@ -30,9 +30,9 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Form */
+
 .calculator-form h2 {
-  color: #27ae60;
+  color: #0a5b2c;
   margin-bottom: 15px;
 }
 .calculator-form label {
@@ -50,7 +50,7 @@
 .calculator-form button {
   margin-top: 20px;
   padding: 12px 25px;
-  background: #27ae60;
+  background: #0a5b2c;
   color: white;
   border: none;
   cursor: pointer;
@@ -58,7 +58,7 @@
   font-size: 1em;
 }
 
-/* Info Box */
+
 .calculator-info {
   text-align: center;
 }
@@ -67,12 +67,12 @@
   margin-bottom: 20px;
 }
 .calculator-info h3 {
-  color: #27ae60;
+  color: #0a5b2c;
   font-size: 1.6em;
   margin-bottom: 10px;
 }
 
-/* Results */
+
 .results {
   text-align: center;
   margin: 50px auto;
@@ -83,12 +83,12 @@
   z-index: 10;
 }
 .results h2 {
-  color: #27ae60;
+  color: #0a5b2c;
   margin-bottom: 20px;
 }
 #workoutTimer {
   font-size: 2.5em;
-  color: #27ae60;
+  color: #0a5b2c;
   margin-top: 20px;
   animation: pulse 1s infinite;
 }
@@ -98,7 +98,7 @@
   100% { transform: scale(1); }
 }
 
-/* Footer */
+
 footer {
   background: #333;
   color: white;
@@ -112,7 +112,7 @@ footer p, footer a {
   text-decoration: none;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .calculator-section {
     flex-direction: column;

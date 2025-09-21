@@ -1,4 +1,4 @@
-// ====== Hamburger Menu ======
+
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 if (hamburger) {
@@ -10,7 +10,7 @@ if (hamburger) {
 document.addEventListener('DOMContentLoaded', () => {
   const sleep = ms => new Promise(res => setTimeout(res, ms));
 
-  // ---------- BREATHING ----------
+  
   const breathingText = document.getElementById('breathingText');
   const circle = document.querySelector('.circle');
   const startBreathingBtn = document.getElementById('startBreathing');
@@ -51,20 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
       breathingLoop();
     }
   });
+
   stopBreathingBtn.addEventListener('click', () => {
     running = false;
     breathingText.textContent = 'Stopped. Click Start to Begin';
   });
 
-  // ---------- MEDITATION TIMER (COUNTDOWN) ----------
+  
   const display = document.getElementById('timerDisplay');
   const startBtn = document.getElementById('startTimer');
   const stopBtn = document.getElementById('stopTimer');
   const resetBtn = document.getElementById('resetTimer');
+  const completedSessionsDisplay = document.getElementById('completedSessions');
 
   let totalSeconds = 0;
   let remainingSeconds = 0;
   let timerInterval = null;
+
+  let completedSessions = parseInt(localStorage.getItem('completedSessions')) || 0;
+  completedSessionsDisplay.textContent = completedSessions;
 
   function updateDisplay() {
     const min = Math.floor(remainingSeconds / 60);
@@ -74,9 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
   updateDisplay();
 
   startBtn.addEventListener('click', () => {
-    if (timerInterval) return; // already running
+    if (timerInterval) return;
 
-    // Ask for duration if not set
     if (totalSeconds === 0) {
       let mins = parseInt(prompt("Set meditation duration (minutes):", "10"));
       if (isNaN(mins) || mins <= 0) return;
@@ -93,6 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(timerInterval);
         timerInterval = null;
         alert("Meditation Complete 🌿");
+
+        
+        completedSessions++;
+        localStorage.setItem('completedSessions', completedSessions);
+        completedSessionsDisplay.textContent = completedSessions;
+
         startBtn.disabled = false;
       }
     }, 1000);
@@ -109,12 +119,15 @@ document.addEventListener('DOMContentLoaded', () => {
   resetBtn.addEventListener('click', () => {
     if (timerInterval) clearInterval(timerInterval);
     timerInterval = null;
-    remainingSeconds = totalSeconds;
-    updateDisplay();
+
+    
+    totalSeconds = 0;
+    remainingSeconds = 0;
+    updateDisplay(); 
     startBtn.disabled = false;
   });
 
-  // ---------- AMBIENT SOUNDS ----------
+  
   const sounds = {
     rain: new Audio('sounds/real-rain-sound-379215.mp3'),
     ocean: new Audio('sounds/ocean-waves-112906.mp3'),
@@ -129,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const audio = sounds[key];
       if (!audio) return;
 
-      // Stop if same button pressed again
       if (currentPlaying === key && !audio.paused) {
         audio.pause();
         audio.currentTime = 0;
@@ -138,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Stop previous
       if (currentPlaying && sounds[currentPlaying]) {
         sounds[currentPlaying].pause();
         sounds[currentPlaying].currentTime = 0;
@@ -146,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
           ?.classList.remove('playing');
       }
 
-      // Play selected
       try {
         await audio.play();
         currentPlaying = key;

@@ -1,21 +1,24 @@
-/* Reset & Base */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  padding-top: 60px;   /* push content down so it's not hidden behind navbar */
-  padding-bottom: 80px; /* if footer is sticky */
+  padding-top: 60px;   
+  padding-bottom: 80px; 
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(116, 145, 116);
+  background: rgb(44, 59, 44);
   padding: 10px 0px;
   color: white;
 
-  position: fixed;  /* always visible at top */
+  
+
+
+  position: fixed;  
   top: 0;
   left: 0;
   width: 100%;
@@ -47,24 +50,18 @@ body {
 
 
 .nav-links.show {
-  max-height: 1000px; /* enough space for all items */
+  max-height: 1000px; 
   opacity: 1;
 }
 
 
-/* .nav-links a {
+.nav-links a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
-} */
-
-.nav-links a {
-  color: #ffffff; /* make sure links are pure white */
-  font-weight: bold;
 }
 
 
-/* Hamburger for mobile/tablet */
 .hamburger {
   display: none;
   font-size: 28px;
@@ -74,7 +71,7 @@ body {
   color: white;
 }
 
-/* Responsive - Tablet and Mobile */
+
 @media (max-width: 992px) {
   .nav-links {
     position: absolute;
@@ -89,7 +86,7 @@ body {
   }
 
   .nav-links.show {
-    max-height: 500px; /* enough space for links */
+    max-height: 500px; 
   }
 
   .nav-links li {
@@ -103,7 +100,7 @@ body {
 
 
 
-/* Footer */
+
 footer {
   background: #333;
   color: white;
@@ -138,12 +135,12 @@ footer button {
   padding: 8px 15px;
   border: none;
   border-radius: 5px;
-  background: #27ae60;
+  background: #0a5b2c;
   color: white;
   cursor: pointer;
   font-weight: bold;
 }
-/* Make page take full height */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -151,7 +148,7 @@ html, body {
   flex-direction: column;
 }
 
-/* Let main content grow and push footer down */
+
 main {
   flex: 1;
 }

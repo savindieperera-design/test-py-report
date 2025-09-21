@@ -1,4 +1,4 @@
-/* Intro (same as calculator/workout) */
+
 .calculator-intro {
   text-align: center;
   padding: 40px 20px;
@@ -6,7 +6,7 @@
 }
 .calculator-intro h1 {
   font-size: 2.5em;
-  color: #27ae60;
+  color: #0a5b2c;
   margin-bottom: 10px;
 }
 .calculator-intro p {
@@ -14,7 +14,7 @@
   color: #555;
 }
 
-/* Layout */
+
 .calculator-section {
   display: flex;
   justify-content: space-around;
@@ -31,7 +31,7 @@
   text-align: center;
 }
 
-/* Breathing Circle */
+
 .breathing-box {
   text-align: center;
   margin-top: 20px;
@@ -41,7 +41,7 @@
   height: 120px;
   margin: 20px auto;
   border-radius: 50%;
-  background: #27ae60;
+  background: #0a5b2c;
   transform: scale(1);
   transition: transform 4s ease-in-out;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
@@ -54,7 +54,7 @@
   color: #333;
 }
 
-/* Timer */
+
 #timerDisplay {
   font-size: 2em;
   margin: 15px 0;
@@ -67,7 +67,7 @@
   padding: 8px 15px;
   border: none;
   border-radius: 6px;
-  background: #27ae60;
+  background: #0a5b2c;
   color: white;
   cursor: pointer;
 }
@@ -75,7 +75,7 @@
   background: #e74c3c;
 }
 
-/* Results section (sounds) */
+
 .results {
   text-align: center;
   margin: 40px auto;

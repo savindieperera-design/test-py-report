@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="recipes.css">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Visually hidden class for accessibility */
+    
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -23,7 +23,7 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  
   <header>
     <nav class="navbar">
       <div class="logo">
@@ -42,13 +42,13 @@
     </nav>
   </header>
 
-  <!-- Intro Section -->
+ 
   <section class="calculator-intro">
     <h1>Healthy Recipes</h1>
     <p>Discover delicious and nutritious meals to support your healthy lifestyle.</p>
   </section>
 
-  <!-- Search & Filter Section -->
+  
   <section class="search-section">
     <h2 class="visually-hidden">Search Recipes</h2>
     <input type="text" id="searchInput" placeholder="Search recipes...">
@@ -66,7 +66,7 @@
 
   <div id="recipes-container"></div>
 
-  <!-- Recipe Detail Popup -->
+ 
   <div id="recipe-detail" class="hidden">
     <div class="detail-content">
       <button id="close-btn">X</button>
@@ -90,17 +90,19 @@
     </div>
   </div>
 
-  <footer>
+<footer>
     <p>&copy; 2025 GreenBite | Follow us on Social Media</p>
     <p><strong>GreenBite HQ</strong> | 123 Wellness Avenue, Colombo 00700</p>
     <p>+94 11 234 5678 <a href="mailto:info@greenbite.lk">info@greenbite.lk</a></p>
+
     <form id="newsletter-form">
+      <label for="newsletter-email">Email Address:</label>
       <input type="email" id="newsletter-email" placeholder="Enter your email" required>
       <button type="submit">Subscribe</button>
     </form>
   </footer>
 
-  <!-- Scripts -->
+ 
   <script src="recipes.js"></script>
 </body>
 </html>

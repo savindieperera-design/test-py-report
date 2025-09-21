@@ -1,6 +1,4 @@
-// =======================
-// NAVBAR (Hamburger Menu)
-// =======================
+// NAVBAR 
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 if (hamburger) {
@@ -9,11 +7,10 @@ if (hamburger) {
   });
 }
 
-// =======================
-// HOME PAGE SCRIPTS
-// =======================
+
+// HOME PAGE 
 if (document.body.contains(document.getElementById("hero-text"))) {
-  // Hero auto-rotating slogans
+ 
   const slogans = [
     "Healthy Living Starts Today",
     "Eat Well, Live Well",
@@ -28,7 +25,7 @@ if (document.body.contains(document.getElementById("hero-text"))) {
     heroText.textContent = slogans[index];
   }, 3000);
 
-  // Health Tip of the Day
+  
   const tips = [
     "Drink at least 8 glasses of water daily.",
     "Walk for 30 minutes every day.",
@@ -39,7 +36,7 @@ if (document.body.contains(document.getElementById("hero-text"))) {
   const today = new Date().getDate();
   document.getElementById("tip").textContent = tips[today % tips.length];
 
-  // Newsletter localStorage
+  
   document.getElementById("newsletter-form").addEventListener("submit", function(e) {
     e.preventDefault();
     const email = document.getElementById("newsletter-email").value;
@@ -49,9 +46,46 @@ if (document.body.contains(document.getElementById("hero-text"))) {
   });
 }
 
-// =======================
-// CALCULATOR PAGE SCRIPTS
-// =======================
+
+// CALCULATOR PAGE 
+
+function animateCounter(id, endValue, duration = 1000) {
+  const element = document.getElementById(id);
+  let start = 0;
+  const increment = endValue / (duration / 16);
+  const counter = setInterval(() => {
+    start += increment;
+    if (start >= endValue) {
+      element.textContent = Math.round(endValue);
+      clearInterval(counter);
+    } else {
+      element.textContent = Math.round(start);
+    }
+  }, 16);
+}
+
+function animateProgressBar(barId, counterId, value, max = 200) {
+  const bar = document.getElementById(barId);
+  const span = document.getElementById(counterId);
+  let width = 0;
+  const targetWidth = Math.min((value / max) * 100, 100); 
+  const increment = targetWidth / 60; 
+  const counterIncrement = value / 60;
+
+  let displayedValue = 0;
+  const interval = setInterval(() => {
+    width += increment;
+    displayedValue += counterIncrement;
+    if (width >= targetWidth) {
+      width = targetWidth;
+      displayedValue = value;
+      clearInterval(interval);
+    }
+    bar.style.width = width + "%";
+    span.textContent = Math.round(displayedValue);
+  }, 16);
+}
+
 if (document.getElementById("calorieForm")) {
   document.getElementById("calorieForm").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -80,17 +114,22 @@ if (document.getElementById("calorieForm")) {
     const fat = (tdee * 0.30) / 9;
 
     document.getElementById("results").style.display = "block";
-    document.getElementById("bmrResult").textContent = `BMR: ${Math.round(bmr)} calories/day`;
-    document.getElementById("tdeeResult").textContent = `TDEE: ${Math.round(tdee)} calories/day`;
-    document.getElementById("carbsResult").textContent = `Carbs: ${Math.round(carbs)} g/day`;
-    document.getElementById("proteinResult").textContent = `Protein: ${Math.round(protein)} g/day`;
-    document.getElementById("fatResult").textContent = `Fat: ${Math.round(fat)} g/day`;
+
+    
+    animateCounter("bmrResult", Math.round(bmr));
+    animateCounter("tdeeResult", Math.round(tdee));
+
+    
+    animateProgressBar("carbsBar", "carbsResult", Math.round(carbs), 300);
+    animateProgressBar("proteinBar", "proteinResult", Math.round(protein), 150);
+    animateProgressBar("fatBar", "fatResult", Math.round(fat), 100);
   });
 }
 
-// =======================
-// WORKOUT PAGE SCRIPTS
-// =======================
+
+
+// WORKOUT PAGE
+
 
  document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("workoutForm")) {
@@ -108,14 +147,14 @@ if (document.getElementById("calorieForm")) {
 
     let interval = null;
 
-    // Load saved workout
+    
     const saved = JSON.parse(localStorage.getItem("currentWorkout"));
     if (saved) {
       resumeWorkout(saved.exercise, saved.startTime, saved.duration);
     }
 
     form.addEventListener("submit", (e) => {
-      e.preventDefault(); // THIS stops the page reload
+      e.preventDefault(); 
 
       const bodyPart = document.getElementById("bodyPart").value;
       const equipment = document.getElementById("equipment").value;
@@ -178,9 +217,9 @@ if (document.getElementById("calorieForm")) {
 });
 
 
-// =======================
+
 // CONTACT PAGE
-// =======================
+
 if (document.getElementById("contactForm")) {
   document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -194,7 +233,7 @@ if (document.getElementById("contactForm")) {
       return;
     }
 
-    // For now just save message to localStorage (no backend)
+    
     const messages = JSON.parse(localStorage.getItem("messages")) || [];
     messages.push({ name, email, message, date: new Date().toLocaleString() });
     localStorage.setItem("messages", JSON.stringify(messages));
@@ -203,7 +242,7 @@ if (document.getElementById("contactForm")) {
     this.reset();
   });
 }
-// FAQ Toggle
+
 document.querySelectorAll('.faq-question').forEach(button => {
   button.addEventListener('click', () => {
     const answer = button.nextElementSibling;

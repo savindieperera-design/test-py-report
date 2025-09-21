@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Spicy Chickpea Buddha Bowl",
+    "description": "A protein-packed, flavorful breakfast bowl with roasted chickpeas, quinoa, and avocado dressing.",
     "image": "images/simply-organic-recipe-roasted-chickpea-buddha-bowls-with-avocado-dressing-finished-horizontal-1.jpg.webp",
     "category": "breakfast",
     "ingredients": [
@@ -27,6 +28,7 @@
   {
     "id": 2,
     "title": "Mango Coconut Chia Pudding",
+    "description": "A refreshing, tropical snack with chia seeds soaked in coconut milk and layered with mango.",
     "image": "images/af4516a-6bb2-482-a427-6ba77151c06_mango_chia_pudding.jpg",
     "category": "snack",
     "ingredients": [
@@ -52,6 +54,7 @@
   {
     "id": 3,
     "title": "Creamy Garlic Mushroom Pasta",
+    "description": "A rich and creamy pasta dish with garlic-sautéed mushrooms and parmesan cheese.",
     "image": "images/Mushroom-and-kale-spaghetti-6c922df.jpg",
     "category": "dinner",
     "ingredients": [
@@ -77,6 +80,7 @@
   {
     "id": 4,
     "title": "Mediterranean Lentil Soup",
+    "description": "A hearty and flavorful lentil soup with vegetables and Mediterranean spices.",
     "image": "images/Mediterranean-Lentil-Soup-with-Spinach-4.jpg",
     "category": "dinner",
     "ingredients": [
@@ -102,6 +106,7 @@
   {
     "id": 5,
     "title": "Berry Oat Smoothie",
+    "description": "A quick, nutrient-packed smoothie with berries, oats, banana, and almond milk.",
     "image": "images/triple-berry-oat-tropical-smoothie.jpg",
     "category": "snack",
     "ingredients": [
@@ -127,6 +132,7 @@
   {
     "id": 6,
     "title": "Stuffed Bell Peppers",
+    "description": "Colorful bell peppers stuffed with quinoa, beans, and vegetables, baked to perfection.",
     "image": "images/stuffed-bell-peppers-recipe-1024x759.webp",
     "category": "lunch",
     "ingredients": [
@@ -155,6 +161,7 @@
   {
     "id": 7,
     "title": "Zucchini Noodle Stir-Fry",
+    "description": "A light, quick stir-fry with zucchini noodles, vegetables, and Asian-inspired flavors.",
     "image": "images/asian-zucchini-noodles-4.jpg",
     "category": "breakfast",
     "ingredients": [
@@ -183,6 +190,7 @@
   {
     "id": 8,
     "title": "Chickpea Curry",
+    "description": "A creamy, spiced chickpea curry perfect with rice or naan for a wholesome lunch.",
     "image": "images/Simply-Recipes-Chickpea-Curry-LEAD-3-c9775da991bd44f7862f9fa5e8ead844.jpg",
     "category": "lunch",
     "ingredients": [
@@ -208,5 +216,4 @@
       "Serve hot with rice or naan bread."
     ]
   }
-
 ]
